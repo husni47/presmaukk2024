@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pemilihan Ketua dan Wakil BEM Periode 2023-2024</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="bg-primary text-white text-center">
+      <h1><marquee>Website Pemilihan Ketua dan Wakil BEM Universitas Kahuripan Kediri </marquee></h1>
+    </header>
+
+    <section id="absensi">
+      <div class="container">
+        
+        <section class="jumbotron text-center">
+          <img src="./img/ukk.png" alt="Misbah" width="200">
+          <h1>Calon Ketua dan Wakil Ketua</h1>
+          <h1>BEM Universitas Kahuripan Kediri</h1>  
+          <h1>Periode 2023 - 2024</h1>        
+        </section>
+        <div class="container">
+          
+          <div class="row justify-content-center">
+            <div class="col-md-5 mb-3">
+              <div class="card">
+                <img src="./img/1.jpg" class="card-img-top" alt="Calon 1"/>
+                <div class="card-body">
+                  <div><h5 style="text-align: center;">Calon 1</h5></div>
+                  <div><h4 style="text-align: center;">Dastin & Ivan</h4></div>
+                  <p class="card-text">
+                    <dl>
+                    <dt>Visi : </dt>
+                    <dd>Menciptakan BEM UKK yang profesional, aktif dan aspiratif untuk lingkungan kampus yang unggul</dd>
+                    </dl>
+                    <dl>
+                    <dt> Misi : </dt>
+                    <ol>
+                      <li> Menciptakan lingkungan kampus yang aktif dan inovatif</li>
+                      <li> Menumbuhkan cinta almamater</li> 
+                      <li> Mewujudkan BEM UKK yang berkolaborasi aktif untuk mewujudkan sumberdaya mahasiswa yang berkualitas</li> 
+                      <li> Revitalisasi terhadap kegiatan kemahasiswaan.</li>
+                    </ol>
+                    <P> &nbsp</P>
+                    <P> &nbsp</P>
+                    </dl>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-5 mb-3">
+              <div class="card">
+                <img src="./img/2.jpg" class="card-img-top" alt="Calon 2" />
+                <div class="card-body">
+                  <div><h5 style="text-align: center;">Calon 2</h5></div>
+                  <div><h4 style="text-align: center;">Muttaqin & Edo Aji</h4></div>
+                  <p class="card-text">
+                    <dl>
+                    <dt>Visi : </dt>
+                    <dd>Menjadi wadah aspirasi mahasiswa yang inovatif, berintegritas, dan berkontribusi aktif dalam membangun kampus yang berkarakter dan masyarakat yang lebih baik</dd>
+                    </dl>
+                    <dl>
+                    <dt> Misi : </dt>
+                    <ol>
+                      <li> Mewujudkan tata kelola organisasi yang transparan, akuntabel, dan partisipatif</li>
+                      <li> Memfasilitasi pengembangan potensi mahasiswa melalui berbagai program kegiatan, menjalin kerjasama yang sinergis dengan seluruh elemen kampus dan masyarakat</li> 
+                      <li> Menjadi suara mahasiswa dalam menyampaikan aspirasi dan memperjuangkan kepentingan bersama.</li> 
+                    </ol>
+                    <P> &nbsp</P>
+                    <P> &nbsp</P>
+                    </dl>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <h2 class="text-center pt-lg-5">MASUKAN PILIAHAN ANDA DIBAWAH INI</h2>
+        <form name="pemilu-raya-ukk-2024">
+        <!--  <div class="alert alert-success alert-dismissible fade show d-none my-alert" role="alert">
+            <strong>Terimakasih!</strong> Sudah Memberikan Suara Anda
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+          </div> -->
+          <class="mb-3">
+            <label for="input1" class="form-label">Nama</label>
+            <input type="text" class="form-control" id="input1" aria-describedby="input1" name="nama" />
+            <label for="input2" class="form-label">Nim</label>
+            <input type="text" class="form-control" id="input2" aria-describedby="input2" name="nim" />
+            <label for="input3" class="form-label">Status</label>
+            <select class="form-select" aria-label="Default select example" name="status">
+              <option selected disabled>Klik untuk memilih</option>
+              <option value="MAHASISWA">MAHASISWA</option>
+              <option value="DOSEN">DOSEN</option>
+              <option value="TENDIK">TENDIK</option>
+            </select>
+            <label for="input4" class="form-label">Pilihan</label>
+            <select class="form-select" aria-label="Default select example" name="pilihan">
+              <option selected disabled>Klik untuk memilih</option>
+              <option value="1">Calon 1</option>
+              <option value="2">Calon 2</option>
+            </select>          
+            <div id="inputHelp" class="form-text">Isikan : Nama,Nim,Status Serta Pilihan anda (1 untuk calon 1, & suara Kosong untuk Suara Kosong )  ( kolom Nim hanya untuk MAHASISWA )</div>              
+            </div>
+          
+            <!--menambah sweetallert2-->
+          <button type="submit" class="btn btn-primary btn-kirim" onclick="Swal.fire('<strong>Terimakasih!</strong> Sudah Memberikan Suara Anda')">Kirim</button>
+          <button class="btn btn-primary d-none btn-loading" type="button" disabled>
+            <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+            Loading...
+          </button>
+        </form>
+      </div>
+    </section>
+    <footer class="bg-primary text-white text-center pb-3">
+      <p>UNIVERSITAS <i class="bi bi-suit-heart-fill"></i><a href="https://www.kahuripan.ac.id/" class="text-white fw-bold">KAHURIPAN</a> KEDIRI</p>
+    </footer>
+    <!-- Optional JavaScript; choose one of the two! -->
+    <!--<script src="script.js"></script>-->
+    <script src="https://kit.fontawesome.com/61e5120832.js" crossorigin="anonymous"></script>
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.8.1/dist/sweetalert2.all.min.js"></script>
+
+    <!--sweetaler2-->
+    <script src="dist/sweetalert2.all.min.js"></script>
+
+    <script src="js/bootstrap.min.js"></script>
+    <script>      
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbx4o6VM45rmEBTMWU-0qG24ILOfbRsTqZouPGihhXzO_E9pIE53fDbq7JLPaTH1RkM5/exec';
+      const form = document.forms['pemilu-raya-ukk-2024'];
+      const btnKirim = document.querySelector('.btn-kirim');
+      const btnLoading = document.querySelector('.btn-loading');
+     // const myAlert = document.querySelector('.my-alert');
+
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        
+        //ketika tombol kirim di klik
+        //tampilkan tombol loading, hilangkan tombol kirim
+        btnLoading.classList.toggle('d-none');
+        btnKirim.classList.toggle('d-none');
+
+        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+          .then((response) => {
+            //tampilkan tombol kirim, hilangkan tombol loading
+            btnLoading.classList.toggle('d-none');
+            btnKirim.classList.toggle('d-none');
+            //tampilkan allert
+           // myAlert.classList.toggle('d-none');
+            //reset form
+            form.reset();
+            
+            //window.location = "https://husnicasela.github.io/presmaukk2023.github.io/";
+            console.log('Success!', response);
+            
+          })
+          .catch((error) => console.error('Error!', error.message));
+      });
+      
+    </script>
+    </body>
+</html>
